@@ -23,6 +23,13 @@
 {% block content %}
   <div class="container">
     <p>{{ foo }}</p>
+    <button ic-get-from="foo.txt" ic-target="#target-span">
+      Click Me!
+    </button>
+
+    <span id="target-span">
+      You haven't clicked yet...
+    </span>
   </div>
 {% endblock %}
 
